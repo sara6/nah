@@ -292,12 +292,43 @@
 *******Footer******
 **************************/
 
-#footer {
-  padding-bottom: 10px;
-  background-image: url(../images/home/footer.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: contain;
+.footer-basic-centered{
+	text-align: center;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+  padding: 40px;
+	margin-top: 40px;*/
+  text-align: center;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-basic-centered .footer-links{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
 }
 
 #footer h1{
@@ -377,10 +408,10 @@
   opacity: .8;
 }
 
-.copyright-text{
+/*.copyright-text{
   margin-top: 70px;
   color: #fff;
-  font-size: 16px;
+  font-size: 200px;
   padding-bottom: 15px;
 }
 
@@ -389,8 +420,10 @@
 }
 
 .copyright-text p {
-  margin-bottom: 0;
-}
+  margin-bottom: 100px;
+}*/
+
+
 
 /*************************
 *******Home Page******
@@ -589,19 +622,13 @@
   display: table;
   position: static;
   width: 100%;
+  margin-bottom: 100px;
 }
 
-#team {
-  padding: 85px 0;
-}
-
-#team-carousel {
-  margin-top: 80px;
-}
 
 #company-information .padding-top{
-  padding-top: 172px;
-
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 .single-service img {
@@ -649,172 +676,12 @@
   height: 100%;
 }
 
-.team-single:hover .social-profile{
-  background:rgba(112, 35, 64, 0.9);
-  display: block;
-  -webkit-animation: fadeInUp 400ms;
-  animation: fadeInUp 400ms;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  transition: all 0.9s ease;
-}
-
-.social-profile .nav-pills {
-  display: inline-block;
-  margin-top: -26px;
-  padding: 0;
-  position: relative;
-  top: 50%;
-}
-
-.social-profile .nav-pills li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.social-profile .nav-pills li a {
-  color: #fff;
-  border: 1px solid #fff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  padding: 0;
-  border-radius: 40px;
-  -webkit-transition: all 0.9s ease;
-  transition: all 0.9s ease;
-}
-
-.social-profile .nav-pills li a:hover {
-  color: #702340;
-  border-color: #702340;
-}
-
-.person-info h2 {
-  font-weight: 300;
-  margin-bottom: 5px;
-}
-
-.person-info h3 {
-  font-size: 16px;
-  color: #686868;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.team-carousel-control {
-  position: absolute;
-  top: 36%;
-  width: 13px;
-  height: 16px;
-  text-indent: -9999999px;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  transition: all 0.9s ease;
-}
-
-.right.team-carousel-control {
-  right: -50px;
-  background-image: url(../images/aboutus/right.png);
-}
-
-.left.team-carousel-control {
-  left: -50px;
-  background-image: url(../images/aboutus/left.png);
-}
-
-.team-carousel-control:hover{
-  background-position: 0 -18px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.count h1{
-  font-size: 60px;
-  color: #00aeef;
-}
-
-.count h3{
-  font-size: 16px;
-}
-
-.progress .progress-bar.six-sec-ease-in-out {
-  -webkit-transition: width 1s ease-in-out;
-  -moz-transition: width 1s ease-in-out;
-  -ms-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
-  transition:  width 1s ease-in-out;
-}
-
-.top-zero{
-  margin-top: 0;
-}
-
-h3.top-zero{
-  font-size: 20px;
-}
-
-#company-information .about-us h2{
-  margin-bottom: 45px;
-}
-
-.single-skill h3{
-  font-size: 16px;
-}
-
-.progress{
-  height: 30px;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
-.progress-bar{
-  line-height: 30px;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
-.progress-bar.progress-bar-primary{
-  background: #00aeef;
-}
-
 
 
 /*************************
 *******Service Page******
 **************************/
-#recent-projects{
-  padding: 85px 0;
-}
 
-.recent-projects .team-single{
-  height: 355px;
-}
-
-.recent-projects p.padding-bottom{
-  padding-bottom: 50px;
-}
-
-.choose{
-  padding-top: 30px;
-}
-
-#company-information.choose .padding-top{
-  padding-top: 50px;
-}
-
-#company-information h2{
-  margin-bottom: 25px;
-  margin-top: 0;
-}
 
 ul.elements{
   list-style: none;
@@ -832,9 +699,13 @@ ul.elements li > i{
   margin-right: 10px;
 }
 
-#company-information h1.margin-bottom{
-  margin-bottom: 26px;
+.footer-edit{
+  margin-bottom: 0;
+  padding-bottom: 10px;
+    background-position: bottom;
+    background-size: contain;
 }
+
 
 
 /* Start: Recommended Isotope styles */
